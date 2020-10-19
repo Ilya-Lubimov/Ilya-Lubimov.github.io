@@ -2,16 +2,72 @@
 	padding:0;
 	margin:0;
 }
+html, body{
+	height:1000px;
+}
 body{
-	width:100%
+	width:100%;
+	display: grid;
+	grid-template-rows: 0.69fr 8fr 1fr;
+	
 }
 #header{
-	padding:5px;
-	width:100%;
+	display:grid;
+	grid-template-columns: 3fr 1fr 1fr 2fr 1fr;
+	
+	position:absolute;
+	background-color:#2A2A2C;
+	position: relative;
+	padding:0 0 0 10px;
+	width:100% - 10px;
 	z-index:10;
+}
+#pageName{
+	color:#FFF;
+
+}
+#pages{
+	margin-top:20px;
+	text-align:center;
+	position:relative;
+	padding:10px;
+	font-size:18pt;
+	color:#FFF;
+}
+#pages:hover{
+	background: #63C8F2;
+	border-radius: 25px 0 25px 0;
+}
+
+.atention{
+	padding:15px 10px 15px 10px;
+	width:80px;
+	position: fixed;
+	right:0;
+	top:50%;
+	background-color: rgba(118, 219, 171, 0.8);
+	color: white;
+	border: 1px rgba(167, 250, 210) solid;
+	border-radius: 25px 0 0 25px;
 }
 
 #body{
+	display:block;
 	width:100%;
-	height: auto;
+	height: 100%;
+}
+
+footer{
+	
+	width: 100%;
+	background-color: rgba(68, 43, 166);
+	height: 100%;
+}
+
+#foot{
+	padding: 30px;
+	font-family: DejaVu Sans Mono;
+	font-size: 20pt;
+	color: #FFF;
+	text-align: center;
 }
