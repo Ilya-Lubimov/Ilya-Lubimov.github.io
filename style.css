@@ -24,19 +24,35 @@ body{
 }
 #pageName{
 	color:#FFF;
-
+	margin: 10px;
+	font-size: 16pt;
+	font-family: 'Courier New', Courier, monospace;
 }
-#pages{
+#pages, #first, #last{
 	margin-top:20px;
 	text-align:center;
 	position:relative;
 	padding:10px;
 	font-size:18pt;
 	color:#FFF;
+	background-color: #645050;
+}
+#first{
+	border-radius: 25px 0 0 0;
+}
+#last{
+	border-radius: 0 25px 0 0;
+}
+#first:hover{
+	background: #63C8F2;
+	border-radius: 25px 0 0 0;
+}
+#last:hover{
+	background: #63C8F2;
+	border-radius: 0 25px 0 0;
 }
 #pages:hover{
-	background: #63C8F2;
-	border-radius: 25px 0 25px 0;
+	background: #63C8F2;	
 }
 
 .atention{
