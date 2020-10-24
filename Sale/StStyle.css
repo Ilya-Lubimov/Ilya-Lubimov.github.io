@@ -2,3 +2,50 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(212, 209, 209);
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    min-width: 800px;
+}
+header{
+    height: 210px;
+    background-image: linear-gradient(#e07b73 75%, transparent 75%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 1fr;
+}
+nav{
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+        
+}
+#decoration, #dress, #decor{
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(149, 193, 235);    
+    color: #33386d;
+    font-size: 22pt;
+    transition:  0.5s ease-out 0s;
+}
+#decoration{
+    border-radius: 0 0 0 25px;
+}
+#decor{
+    border-radius: 0 0 25px 0;
+}
+#decoration:hover, #decor:hover, #dress:hover{
+    background-color: #33386d;
+    color: rgb(149, 193, 235);
+    border-radius: 0 0 25px 25px;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 24pt;
+}
+
+.frame{
+    height: 100%;
+    //background-color: firebrick;
+}
